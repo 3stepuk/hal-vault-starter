@@ -27,3 +27,15 @@ Thought is a collaborative medium. You bring the intent, the lived experience, t
 2. Open Obsidian and select **"Open folder as vault"** pointing to this directory.
 3. Install the **Copilot** community plugin in Obsidian settings.
 4. Read `99_Start Here/Welcome to Hal.md` to begin.
+
+---
+
+## The Full-Access Stack (Why people will freak out)
+
+Most AI tools are trapped in a browser tab. This vault is different because it connects to the **full operating system**:
+- **Accessibility:** Allows the assistant to click and type across the Mac.
+- **Screen Recording:** Allows the assistant to see what's on screen in real time.
+- **AppleScript / CalDAV:** Direct read/write access to Apple Calendar, Reminders, Notes, and Mail.
+- **Safari JavaScript:** Direct control over open browser tabs.
+
+People used to walled gardens will think giving an AI this much free rein is unhinged. But when you are the sole master of your own local machine, you aren't leaking data to a corporate cloud—you are building a local command centre that actually executes work.
