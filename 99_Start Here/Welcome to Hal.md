@@ -43,4 +43,17 @@ tags:
 
 ---
 
+## 4. Give Hal the Full Access Stack
+
+Hal is most useful when it can reach your machine. Read these in order:
+
+1. **[[Permissions Setup - give Hal hands, eyes, ears and voice]]** — grant hands, eyes, ears, voice (Accessibility, Screen Recording, Safari JS, mic). *Do this first — nothing else works until it's granted.*
+2. **[[Capability Map]]** — everything Hal can do once the permissions are on.
+3. **[[Hal Workflows]]** — the master patterns (how we work together: write → clipboard → paste → Hal wires it up).
+4. **[[Operating Workflows - the nitty-gritty mechanics]]** — the mechanical detail (clipboard, Safari text injection, screen-reading, clicking).
+
+> The short version of the whole system: **capture raw, process clean, and let Hal do the plumbing.** The clipboard is the handshake — if Hal says "it's on your clipboard," you just paste.
+
+---
+
 *Welcome to the proper way to work. You're never going back.*
