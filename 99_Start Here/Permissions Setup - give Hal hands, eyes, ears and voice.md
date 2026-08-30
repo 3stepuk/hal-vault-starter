@@ -79,6 +79,16 @@ These are granted per-app and per-request the first time Hal asks (the macOS pro
 
 For iCloud Mail, Calendar (CalDAV), etc., create **app-specific passwords** in your Apple ID security settings and store them at `~/.config/<service>.key` (chmod 600). **Never store secrets in the vault.**
 
+## 7b. Notifications — Hal's PING (see it when it happens)
+
+Needed for: Hal popping a desktop notification (with sound) when watching your screen.
+
+**Grant:** System Settings → **Notifications** → find the process running the assistant (likely `opencode`, or the terminal) → **Allow notifications** → style **Alerts** (persistent, stays on screen) → **Play sound**.
+
+**Why it matters:** without this permission macOS silently drops the notification (it "shows up" in the code but never pings / never appears). Granting it once makes Hal's notifications visible + audible in real time.
+
+**What it unlocks:** `osascript -e 'display notification "msg" with title "Hal" subtitle "..." sound name "Glass"'` — Hal pings you mid-session while watching. (Note: Hal can push a notification anytime, but can't type into the chat thread unprompted — the notification is the "look at this now" channel.)
+
 ---
 
 ## 8. The two scripts you'll want early
