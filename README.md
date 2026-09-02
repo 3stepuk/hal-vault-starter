@@ -20,7 +20,7 @@ Thought is a collaborative medium. You bring the intent, the lived experience, t
 - **Structured Folders:** `00_Inbox`, `01_Daily_Log`, `02_Projects`, `03_Research`, `04_Areas`, `07_Metadata`, `99_Start Here`
 - **Zero Lock-in:** 100% local plain-text Markdown files. You own your data.
 - **AI-Ready:** Pre-set for Obsidian Copilot (DeepSeek/Gemini integration).
-- **The Full Workflow Docs:** the onboarding notes in `99_Start Here` carry the *how* — [[Permissions Setup]], [[Capability Map]], [[Hal Workflows]], and the nitty-gritty operating mechanics — so a newcomer can stand up the whole system, not just a folder structure.
+- **The Full Workflow Docs:** the onboarding notes in `99_Start Here` carry the *how* — [[Permissions Setup - give Hal hands, eyes, ears and voice]], [[Capability Map]], [[Hal Workflows]], and the nitty-gritty operating mechanics — so a newcomer can stand up the whole system, not just a folder structure.
 
 ## Getting Started
 
