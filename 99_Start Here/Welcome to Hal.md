@@ -51,6 +51,8 @@ Hal is most useful when it can reach your machine. Read these in order:
 2. **[[Capability Map]]** — everything Hal can do once the permissions are on.
 3. **[[Hal Workflows]]** — the master patterns (how we work together: write → clipboard → paste → Hal wires it up).
 4. **[[Operating Workflows - the nitty-gritty mechanics]]** — the mechanical detail (clipboard, Safari text injection, screen-reading, clicking).
+5. **[[Keeping the System Healthy - Resilience and the Incident Playbook]]** — read this once things are running: health checks, versioned backups, and the calm way to handle a "it all looks gone" moment. (Learned the hard way — don't skip it.)
+6. **[[Voice Capture - dictate freely, consolidate at load-in]]** — the voice-dictation capture model.
 
 > The short version of the whole system: **capture raw, process clean, and let Hal do the plumbing.** The clipboard is the handshake — if Hal says "it's on your clipboard," you just paste.
 
