@@ -15,7 +15,7 @@ date: 2026-09-02
 
 ## The pattern
 
-Mark dictates on the move (phone → iOS Shortcut → Apple Notes). Each dictation lands as a dated note in a dedicated **"Hal"** folder in Apple Notes.
+Dictate on the move (phone → iOS Shortcut → Apple Notes). Each dictation lands as a dated note in a dedicated **"Hal"** folder in Apple Notes.
 
 **The quirk:** the Shortcut doesn't reliably append to a single note — some days it creates **several notes sharing the same date-name** (the tool can't tell identical names apart). That's fine. We don't try to make the capture perfect.
 

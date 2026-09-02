@@ -42,7 +42,7 @@ The single most used workflow (proven across AI Studio builds).
    - verify the real asset URLs return 200
 5. **Register it** in a launch log.
 
-*Blank-screen failure (Mentalism Practice App) was this runbook missed once: source deployed instead of build, no base path, wrong Pages source branch, no forced rebuild.*
+*A common blank-screen failure is this runbook missed once: deploying the source instead of the built output, no base path, the wrong Pages source branch, and no forced rebuild. Check all four before declaring it live.*
 
 ---
 
