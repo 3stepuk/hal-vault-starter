@@ -38,6 +38,8 @@ tags:
 - `02_Projects/` — Active work with a clear definition of "done" and an Action Log.
 - `03_Research/` — Curiosity items, reference material, and deep reads.
 - `04_Areas/` — Ongoing domains of responsibility (finances, health, business areas).
+- `05_Archive/` — Superseded notes and retired automations, kept but out of the way.
+- `06_Attachments/` — Images and media.
 - `07_Metadata/` — System handovers, credentials pointers, and configuration notes.
 - `99_Start Here/` — Guides and onboarding notes (like this one).
 
