@@ -60,7 +60,17 @@ Exact-mirror backups (`rsync --delete`) are excellent against **disk failure** b
 - If a key stops working, the reliable recovery is to **re-enter it through the tool's Settings UI** (which writes to the encrypted store), pulling the value from `~/.config/`. 
 - ⚠️ Don't write a script that pokes keys into a config file's *legacy/plaintext* fields unless you've verified the tool actually reads them — it can "succeed" while changing nothing that matters (false confidence).
 
-## Lesson 5 — Lean is resilient: retire, don't fight the tool
+## Lesson 5 — An API token only carries the permissions it was minted with
+
+When you connect a tool to an API (Facebook, X, Google, GitHub, etc.), **a token does not gain new permissions just because you later add them to the app.** A token is a snapshot of the scopes that were granted *at the moment it was created*. If you add a permission (e.g. to read something you could only previously write), the existing token will still fail on it.
+
+**The fix / guard:**
+- Expect to **regenerate the token** after changing an app's permissions, then re-run the **long-lived exchange** (the step that turns a short-lived token into a ~60-day one).
+- Don't conclude "it's broken" from a permission error alone — check the token's actual scopes first (e.g. a debug/verify endpoint). It's usually *missing a permission*, not a genuinely failed call.
+- Keep the **app secret** safe and nearby (`~/.config/`, chmod 600) — the long-lived exchange needs it.
+- Record *which permission unlocks what* (e.g. "write/manage" vs "read back content/engagement" are separate scopes) so you request the right one the first time.
+
+## Lesson 6 — Lean is resilient: retire, don't fight the tool
 
 When a tool or integration is brittle (won't behave as you want, or its API/security fights you), the resilient move is usually to **work with what it does** rather than engineer around it — or to **retire it** and use the simpler reliable path. Every extra tool, provider, or stored credential is another thing that can silently break.
 
